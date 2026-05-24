@@ -16,9 +16,9 @@ export default function Philosophy() {
             <span className="text-[11px] font-mono font-bold uppercase tracking-widest text-[#7C8072] bg-[#E7EBDC] px-3 py-1 rounded-full">
               About Me
             </span>
-            <h2 className="text-3xl md:text-4xl font-sans font-extrabold tracking-tight text-pure-black uppercase mt-3">
-              Komal Gajjar Profile
-            </h2>
+                <h2 className="text-3xl md:text-4xl font-sans font-extrabold tracking-tight text-pure-black uppercase mt-3">
+                  Professional Profile
+                </h2>
           </div>
           <p className="text-xs md:text-sm font-mono text-soft-gray mt-2 md:mt-0 select-none">
              01 // PYTHON DEVELOPER PROFILE
@@ -153,7 +153,7 @@ export default function Philosophy() {
                   3. Modern Responsive Frontends
                 </h4>
                 <p className="text-xs md:text-sm font-sans text-soft-gray leading-relaxed">
-                  Creating responsive UIs with HTML, CSS, Bootstrap, and JavaScript. Ensuring intuitive navigation and fluid layouts across desktop and mobile devices.
+                  Building responsive UIs with React.js, Tailwind CSS, and JavaScript. Ensuring intuitive navigation and fluid layouts across all device sizes.
                 </p>
               </div>
             </motion.div>

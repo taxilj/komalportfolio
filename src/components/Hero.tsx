@@ -39,11 +39,10 @@ export default function Hero() {
               className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-card-white border border-soft-gray/20 shadow-3xs"
             >
               <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-neon-lime opacity-80"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-neon-lime"></span>
               </span>
               <span className="text-[10px] md:text-xs font-mono font-bold uppercase tracking-wider text-pure-black">
-                Available for Internship Opportunities
+                Available for Internship & Developer Roles
               </span>
             </motion.div>
 
@@ -75,7 +74,7 @@ export default function Hero() {
               transition={{ duration: 0.7, delay: 0.3 }}
               className="text-base sm:text-lg md:text-xl font-sans text-soft-gray leading-relaxed max-w-2xl font-normal"
             >
-              Passionate Python developer focused on building scalable web applications, backend systems, and modern user-friendly digital experiences.
+              Python developer focused on building scalable backend systems, modern web applications, and clean user-centric digital experiences.
             </motion.p>
 
             {/* Recruiter-friendly Buttons */}
@@ -85,24 +84,24 @@ export default function Hero() {
               transition={{ duration: 0.7, delay: 0.4 }}
               className="flex flex-col xs:flex-row items-center xs:items-center gap-3 pt-2"
             >
-              {/* Download Resume Link */}
-              <a
-                href="/komal-gajjar-resume.pdf"
-                download
-                className="px-6 py-4 rounded-full bg-pure-black text-white hover:bg-neon-lime hover:text-pure-black hover:scale-105 active:scale-95 shadow-md font-sans text-sm font-bold flex items-center gap-2 transition-all duration-300 cursor-pointer"
-              >
-                <Download size={14} />
-                <span>Download Resume</span>
-              </a>
-
               {/* View Projects Button */}
               <button
                 onClick={() => handleScrollToSection("#projects")}
-                className="px-6 py-4 rounded-full bg-card-white border border-soft-gray/20 text-pure-black hover:bg-neutral-100 hover:scale-105 active:scale-95 shadow-3xs hover:shadow-2xs font-sans text-sm font-bold flex items-center gap-1.5 transition-all duration-300 cursor-pointer"
+                className="px-6 py-4 rounded-full bg-pure-black text-white hover:bg-neon-lime hover:text-pure-black hover:scale-105 active:scale-95 shadow-md font-sans text-sm font-bold flex items-center gap-1.5 transition-all duration-300 cursor-pointer"
               >
                 <span>View Projects</span>
                 <ArrowRight size={14} />
               </button>
+
+              {/* Download Resume Link */}
+              <a
+                href="/komal-gajjar-resume.pdf"
+                download
+                className="px-6 py-4 rounded-full bg-card-white border border-soft-gray/20 text-pure-black hover:bg-neutral-100 hover:scale-105 active:scale-95 shadow-3xs hover:shadow-2xs font-sans text-sm font-bold flex items-center gap-2 transition-all duration-300 cursor-pointer"
+              >
+                <Download size={14} />
+                <span>Download Resume</span>
+              </a>
 
               {/* Contact Button */}
               <button
@@ -122,10 +121,10 @@ export default function Hero() {
             >
               <div className="flex items-center gap-2 text-xs text-soft-gray font-mono">
                 <Award size={14} className="text-pure-black" />
-                <span>MCA Student at Ganpat University</span>
+                <span>MCA, Ganpat University</span>
               </div>
               <div className="flex items-center gap-2 text-xs text-soft-gray font-mono">
-                <CheckCircle size={14} className="text-neon-lime stroke-pure-black animate-pulse" />
+                <CheckCircle size={14} className="text-neon-lime stroke-pure-black" />
                 <span>Python & Django developer</span>
               </div>
             </motion.div>

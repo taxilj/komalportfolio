@@ -1,12 +1,12 @@
 import { Project, TimelineItem, SkillItem } from "./types";
 
 export const BRAND_NAME = "Komal Gajjar";
-export const BRAND_ROLE = "Python Developer | Django Developer | MCA Student";
-export const BRAND_TITLE = "Building scalable, clean, and user-friendly web applications using Python and modern technologies.";
+export const BRAND_ROLE = "Python Developer | Django Developer | Backend Developer";
+export const BRAND_TITLE = "Building scalable backend systems, modern web applications, and clean user-focused digital experiences using Python and modern technologies.";
 
-export const BIO_SUMMARY = "I am an MCA student and aspiring Python developer passionate about backend development, web applications, and problem solving. I enjoy creating scalable and practical solutions using Python, Django, databases, and modern web technologies.";
+export const BIO_SUMMARY = "I am a Python Developer focused on building scalable web applications, backend systems, and responsive user experiences. I enjoy solving real-world problems through clean code, efficient architectures, and modern development practices.";
 
-export const CAREER_OBJECTIVE = "Seeking internship and entry-level opportunities as a Python Developer to apply technical knowledge, gain industry experience, and contribute to real-world software development projects.";
+export const CAREER_OBJECTIVE = "Seeking internship and entry-level opportunities in Python and backend development to contribute technical skills, problem-solving abilities, and modern web development knowledge in real-world software projects.";
 
 export const CONTACT_INFO = {
   phone: "+91 7265 057137",
@@ -23,119 +23,47 @@ export const LANGUAGES = [
 ];
 
 export const SKILL_ITEMS: SkillItem[] = [
-  // Programming Languages
-  {
-    name: "Python",
-    category: "programming",
-    proficiency: "Expert",
-    description: "Backend development, scripting, algorithm modeling, API design, and data handling with modern Python libraries and frameworks.",
-    iconName: "Terminal"
-  },
-  {
-    name: "Java",
-    category: "programming",
-    proficiency: "Expert",
-    description: "Object-oriented program structure, collection frameworks, API design, multithreading, and secure database connectivity.",
-    iconName: "Terminal"
-  },
-  {
-    name: "C/C++",
-    category: "programming",
-    proficiency: "Advanced",
-    description: "Solid conceptual foundation in structures, algorithms, pointer allocations, and memory resource optimization.",
-    iconName: "Terminal"
-  },
-  {
-    name: "C#",
-    category: "programming",
-    proficiency: "Intermediate",
-    description: "Desktop software architecture, basic enterprise program modules, object bindings, and asynchronous control workflows.",
-    iconName: "Terminal"
-  },
-
-  // Backend & Frameworks
-  {
-    name: "Django",
-    category: "tools",
-    proficiency: "Advanced",
-    description: "MVT framework setups, admin dashboards, ORM mapping, authentication systems, and robust API development with Python.",
-    iconName: "Sparkles"
-  },
-  {
-    name: "ASP.NET",
-    category: "tools",
-    proficiency: "Intermediate",
-    description: "Web services configuration, model-controller handling, database connections, and secure enterprise application forms.",
-    iconName: "Globe"
-  },
-  {
-    name: "PHP",
-    category: "tools",
-    proficiency: "Advanced",
-    description: "Dynamic scripting, server request routing, database integrations inside SQL tables, and secure sessions configuration.",
-    iconName: "Globe"
-  },
-
-  // Frontend
   {
     name: "HTML",
     category: "web",
     proficiency: "Expert",
-    description: "Advanced semantic structures, SEO metadata, web accessibility compliance, and robust DOM nodes arrangement.",
+    description: "Semantic markup, SEO-friendly structure, accessibility compliance, and clean DOM architecture.",
     iconName: "Layout"
   },
   {
     name: "CSS",
     category: "web",
     proficiency: "Expert",
-    description: "Responsive layouts on all viewport grids, animations, flexbox layouts, and pixel-perfect style alignments.",
+    description: "Responsive layouts, flexbox, grid systems, animations, and pixel-perfect styling across all devices.",
     iconName: "Layout"
-  },
-  {
-    name: "Bootstrap",
-    category: "web",
-    proficiency: "Expert",
-    description: "Grid frameworks layouts, components customization, dynamic visual interfaces alignment, and quick prototype responsiveness.",
-    iconName: "Monitor"
   },
   {
     name: "JavaScript",
     category: "web",
     proficiency: "Advanced",
-    description: "Interactive frontend logic, DOM manipulation, event handling, and dynamic client-side scripting for modern web applications.",
+    description: "DOM manipulation, event handling, async programming, and dynamic client-side interactivity.",
     iconName: "Layout"
   },
-
-  // Databases
   {
-    name: "MySQL",
-    category: "database",
-    proficiency: "Expert",
-    description: "Writing complex relational transactions, structural joins, query indexing, and schema optimization patterns.",
-    iconName: "Layers"
-  },
-  {
-    name: "SQLite",
-    category: "database",
+    name: "React.js",
+    category: "web",
     proficiency: "Advanced",
-    description: "Lightweight embedded SQL database modeling for standalone web tools, local applications, and rapid prototyping.",
-    iconName: "Layers"
+    description: "Component-based UI development, hooks, state management, and building modern single-page applications.",
+    iconName: "Monitor"
   },
-
-  // Tools
   {
-    name: "GitHub",
+    name: "Node.js",
     category: "tools",
     proficiency: "Advanced",
-    description: "Distributed version control, branch management, merge conflict resolution, and collaborative project documentation.",
-    iconName: "Globe"
+    description: "Server-side JavaScript runtime for building scalable network applications, REST APIs, and real-time services.",
+    iconName: "Terminal"
   },
   {
-    name: "VS Code",
-    category: "tools",
-    proficiency: "Expert",
-    description: "Customized development environment with integrated extensions, linting, debugging, and code formatting tools.",
-    iconName: "Sliders"
+    name: "MongoDB",
+    category: "database",
+    proficiency: "Advanced",
+    description: "NoSQL document database for flexible schemas, high-performance queries, and scalable data storage solutions.",
+    iconName: "Layers"
   }
 ];
 
@@ -144,8 +72,8 @@ export const PROJECTS: Project[] = [
     id: "techvoyage",
     title: "TechVoyage Travel Management System",
     category: "Full-Stack Django Application",
-    tags: ["Django", "Python", "SQLite", "Bootstrap", "JS"],
-    description: "Developed a full-stack travel and tour management system using Django and Python with booking, reviews, and admin dashboard.",
+    tags: ["Django", "Python", "JavaScript", "Responsive", "SQLite"],
+    description: "Full-stack travel management platform built with Django MVT pattern featuring booking engine, review system, admin dashboard, and automated invoice generation.",
     image: "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=800&q=80",
     github: "https://github.com/komalgajjar/techvoyage",
     stats: [
@@ -157,7 +85,7 @@ export const PROJECTS: Project[] = [
     isFeatured: true,
 
     role: "Full Stack Django Developer",
-    tools: ["Python", "Django", "SQLite", "HTML", "CSS", "JavaScript", "Bootstrap"],
+    tools: ["Python", "Django", "HTML", "CSS", "JavaScript", "SQLite"],
     result: "Delivered a full-featured travel platform with authentication, booking, wishlist, reviews, invoicing, and admin dashboard.",
     challenge: "The prior system lacked structured user flows, unified admin interfaces, and secure payment tracking capabilities.",
     solution: "Designed cohesive models using Django MVT pattern. Built custom views for invoice rendering, user authentication, and responsive dashboards.",
@@ -172,8 +100,8 @@ export const PROJECTS: Project[] = [
     id: "bookstore",
     title: "Online Bookstore Web Application",
     category: "E-Commerce Web App",
-    tags: ["PHP", "MySQL", "HTML/CSS", "Responsive"],
-    description: "Created a responsive bookstore platform with user authentication, shopping cart, and order management system.",
+    tags: ["MySQL", "HTML/CSS", "JavaScript", "Responsive"],
+    description: "PHP-MySQL e-commerce application with secure user authentication, dynamic shopping cart, session management, and order tracking system.",
     image: "https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=800&q=80",
     github: "https://github.com/komalgajjar/bookstore",
     stats: [
@@ -185,7 +113,7 @@ export const PROJECTS: Project[] = [
     isFeatured: false,
 
     role: "Backend & Web Developer",
-    tools: ["PHP", "MySQL", "HTML", "CSS"],
+    tools: ["MySQL", "HTML", "CSS", "JavaScript"],
     result: "Built a fully functional online bookstore with user login, dynamic cart, order history, and secure database integration.",
     challenge: "Persistent shopping cart caching and relational database security are often unstable in custom PHP architectures.",
     solution: "Developed dynamic PHP relational queries with prepared statements, maintaining instant cart updates and secure session handling.",
