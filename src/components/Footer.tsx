@@ -41,6 +41,13 @@ export default function Footer() {
   };
 
   return (
+    <motion.section
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.8 }}
+      className="relative"
+    >
     <footer id="contact" className="relative pt-20 pb-12 bg-bg-white overflow-hidden border-t border-soft-gray/5">
       {/* Background Soft Glow Aura */}
       <div className="absolute bottom-[20%] left-1/2 -translate-x-1/2 w-[700px] h-[500px] rounded-full radial-glow opacity-25 pointer-events-none z-0" />
@@ -341,5 +348,6 @@ export default function Footer() {
 
       </div>
     </footer>
+    </motion.section>
   );
 }

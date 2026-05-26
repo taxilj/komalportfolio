@@ -4,6 +4,13 @@ import { BIO_SUMMARY, CAREER_OBJECTIVE, LANGUAGES } from "../data";
 
 export default function Philosophy() {
   return (
+    <motion.section
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.8 }}
+      className="relative"
+    >
     <section id="about" className="relative py-20 md:py-28 bg-bg-white overflow-hidden border-b border-soft-gray/5">
       {/* Background radial soft light blur */}
       <div className="absolute top-[40%] right-[-10%] w-[450px] h-[450px] rounded-full radial-glow-smaller opacity-45 pointer-events-none" />
@@ -164,5 +171,6 @@ export default function Philosophy() {
 
       </div>
     </section>
+    </motion.section>
   );
 }

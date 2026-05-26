@@ -25,6 +25,13 @@ export default function Skills() {
   };
 
   return (
+    <motion.section
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.8 }}
+      className="relative"
+    >
     <section id="skills" className="relative py-20 md:py-28 bg-bg-white overflow-hidden border-b border-soft-gray/5">
       <div className="absolute top-[20%] left-[-10%] w-[450px] h-[450px] rounded-full radial-glow-smaller opacity-30 pointer-events-none" />
 
@@ -93,5 +100,6 @@ export default function Skills() {
 
       </div>
     </section>
+    </motion.section>
   );
 }

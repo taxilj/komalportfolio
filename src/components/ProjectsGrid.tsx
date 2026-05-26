@@ -8,6 +8,13 @@ export default function ProjectsGrid() {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
   return (
+    <motion.section
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.8 }}
+      className="relative"
+    >
     <section id="projects" className="relative py-20 md:py-28 bg-bg-white overflow-hidden border-b border-soft-gray/5">
       {/* Background Soft Glow */}
       <div className="absolute top-[30%] right-[-10%] w-[500px] h-[500px] rounded-full radial-glow-smaller opacity-30 pointer-events-none" />
@@ -259,5 +266,6 @@ export default function ProjectsGrid() {
         )}
       </AnimatePresence>
     </section>
+    </motion.section>
   );
 }

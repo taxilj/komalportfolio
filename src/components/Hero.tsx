@@ -19,6 +19,13 @@ export default function Hero() {
   };
 
   return (
+    <motion.section
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+      className="relative"
+    >
     <section id="home" className="relative pt-24 pb-16 md:pt-36 md:pb-24 overflow-hidden bg-bg-white border-b border-soft-gray/5">
       {/* Soft Glow Ambient Background */}
       <div className="absolute top-[30%] left-1/2 -translate-x-1/2 w-[500px] h-[500px] rounded-full radial-glow opacity-50 pointer-events-none z-0" />
@@ -165,5 +172,6 @@ export default function Hero() {
         </button>
       </div>
     </section>
+    </motion.section>
   );
 }

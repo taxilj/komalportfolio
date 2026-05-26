@@ -1,6 +1,10 @@
 {
   "name": "Komal Gajjar Portfolio",
   "description": "A premium ultra-modern personal portfolio website for Komal Gajjar, an MCA student and aspiring software developer.",
+  "schema": "https://schema.org/Person",
+  "name": "Komal Gajjar",
+  "description": "MCA student at Ganpat University developing full-stack web applications with Python, Django, and React",
+  "image": "https://komalgajjar.dev/images/profile.jpg",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }
